@@ -25,7 +25,6 @@ time = now.strftime("%H:%M:%S")
 ayy = datetime.now()
 gun = datetime.now()
 
-# tarixlerin funksyalari bitdi
 
 if (sys.argv[1] == "tarixi" and sys.argv[2] == "de"):
     print("Tarix:", today)
@@ -38,6 +37,8 @@ elif (sys.argv[1] == "gunu" and sys.argv[2] == "de"):
 elif (sys.argv[1] == "saati" and sys.argv[2] == "de"):
     print("Saat:", time)
 
+
+# tarixlerin funksyalari bitdi
 # - - - - - - - - - - - - - - - - 
 
 # qovluq funksyalari basladi
@@ -65,6 +66,8 @@ elif (sys.argv[1] == "qovluqu" and sys.argv[2] == "sil"):
 
 # - - - - - - - - - - - - - - - - 
 
+# cals funksyalari basladi
+
 if sys.argv[1] =="+":
     X = int(input('Ilk Reqem: '))
     Y = int(input('Ikinci Reqem: '))
@@ -82,3 +85,4 @@ elif sys.argv[1] == "/":
     Y = int(input('Ikinci Reqem: '))
     print(X, "/", Y,"=", X / Y)
 
+# cals funksyalari bitdi
