@@ -27,15 +27,15 @@ gun = datetime.now()
 
 # tarixlerin funksyalari bitdi
 
-if sys.argv[1] == "tarixide":
+if (sys.argv[1] == "tarixi" and sys.argv[2] == "de"):
     print("Tarix:", today)
-elif sys.argv[1] == "ilide":
+elif (sys.argv[1] == "ili" and sys.argv[2] == "de"):
     print("Il:", today.year)
-elif sys.argv[1] == "ayide":
+elif (sys.argv[1] == "ayi" and sys.argv[2] == "de"):
     print("Ay:", ayy.strftime("%B"))
-elif sys.argv[1] == "gunude":
+elif (sys.argv[1] == "gunu" and sys.argv[2] == "de"):
     print("Gun:", ayy.strftime("%A"))
-elif sys.argv[1] == "saatide":
+elif (sys.argv[1] == "saati" and sys.argv[2] == "de"):
     print("Saat:", time)
 
 # - - - - - - - - - - - - - - - - 
@@ -43,18 +43,18 @@ elif sys.argv[1] == "saatide":
 # qovluq funksyalari basladi
 
 cwd = os.getcwd()
-if sys.argv[1] == "yerigoster":
+if (sys.argv[1] == "yeri" and sys.argv[2] == "goster"):
     print("Yeriniz:", cwd)
 
 
 
-if sys.argv[1] == "qovluqyarat":
+if (sys.argv[1] == "qovluq" and sys.argv[2] == "yarat"):
     directory = input("Qovluq adını qeyd et: ") 
     parent_dir = "/Users/hcyevelnur/Desktop/py/botpy/"
     path = os.path.join(parent_dir, directory) 
     os.mkdir(path)
     print(directory + ": adlı qovluqunuz yaradıldı.")
-elif sys.argv[1] == "qovluqsil":
+elif (sys.argv[1] == "qovluqu" and sys.argv[2] == "sil"):
     directory = input("Qovluq adını qeyd et: ") 
     parent_dir = "/Users/hcyevelnur/Desktop/py/botpy/"
     path = os.path.join(parent_dir, directory) 
