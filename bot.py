@@ -410,6 +410,6 @@ elif sys.argv[1] == "elan" and sys.argv[2] == "sil":
     try:
         name = input("Silinəcək not adını daxil et: ")
         os.remove(name)
-        print(f"{name} Adli Not silindi!")
+        print(f"{name} adli Not silindi!")
     except:
         print("Belə not yoxdur!")
